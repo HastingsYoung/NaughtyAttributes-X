@@ -321,8 +321,10 @@ public class NaughtyComponent : MonoBehaviour
 ![inspector](https://github.com/HastingsYoung/NaughtyAttributes-X/blob/main/Assets/NaughtyAttributes/Documentation~/Indicator_Inspector.png)
 
 
-### InfoBox
+### InfoBox (NEW)
 Used for providing additional information.
+
+NEW: Alternatively, use `ExpandableInfoBox` to show minor hints as required and expand to view full infomation when it get clicked.
 
 ```csharp
 public class NaughtyComponent : MonoBehaviour
@@ -335,6 +337,18 @@ public class NaughtyComponent : MonoBehaviour
 
 	[InfoBox("This is my vector", EInfoBoxType.Error)]
 	public Vector3 myVector;
+	
+    [ExpandableInfoBox("Some quick hint (Expand to find out more...)",
+            "You've found the gem here! Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
+            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis scelerisque fermentum dui faucibus in. ",
+            EInfoBoxType.Normal)]
+    public int something;
+        
+    [ExpandableInfoBox("Some quick hint 2 (Expand to find out more...)",
+            "You've found the gem here! Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
+            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis scelerisque fermentum dui faucibus in. ",
+            EInfoBoxType.Normal)]
+    public string somethingElse;
 }
 ```
 

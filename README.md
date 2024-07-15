@@ -40,11 +40,11 @@ NaughtyAttributes is an open-source project that I am developing in my free time
 
 ## Class Attributes
 ### ClassAvatar (NEW)
+1. This component requires icons to be placed under `Editor Default Resources/Icons` folder.
+2. The repo has already supplied with a couple of general icons but you're free to include more by yourself.
 
 ```csharp
 
-// 1. This component requires icons to be placed under Editor Default Resources/Icons folder.
-// 2. The repo has already supplied with a couple of general icons but you're free to include more by yourself.
 [ClassAvatar("Icon_Editor_Test", "ClassAvatarTest")]
 public class NaughtyComponent : MonoBehaviour
 {
@@ -473,7 +473,7 @@ public class NaughtyComponent : MonoBehaviour
 ### ShowAssetPreview (NEW)
 Shows the texture preview of a given asset (Sprite, Prefab...).
 
-New: Rearrange the gui to the right side of inspector with more meta information displayed. 
+New: Rearrange the GUI to the right side of inspector with more meta information displayed. 
 
 ```csharp
 public class NaughtyComponent : MonoBehaviour

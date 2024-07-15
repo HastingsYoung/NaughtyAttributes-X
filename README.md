@@ -21,7 +21,11 @@ This repository is not a fork of [NaughtyAttributes](https://github.com/dbrizov/
 Unity **2019.4** or later versions. Don't forget to include the NaughtyAttributes namespace.
 
 ## Installation
-1. Download `.unitypackage` from release.
+1. Download `.unitypackage` from [Release Page](https://github.com/HastingsYoung/NaughtyAttributes-X/releases).
+2. Install via git url by adding this entry in your `manifest.json`
+	```sh
+	"com.dbrizov.naughtyattributes-x": "https://github.com/HastingsYoung/NaughtyAttributes-X.git#upm"
+	```
 
 ## Documentation
 - [Documentation](https://dbrizov.github.io/na-docs/)

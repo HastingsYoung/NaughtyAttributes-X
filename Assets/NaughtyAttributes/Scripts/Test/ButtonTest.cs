@@ -35,5 +35,17 @@ namespace NaughtyAttributes.Test
 				yield return new WaitForSeconds(1.0f);
 			}
 		}
+
+		[ButtonEnableIfEditMode]
+		private void ShortHandedButton_EditMode()
+		{
+			
+		}
+		
+		[ButtonEnableIfEditMode]
+		private void ShortHandedButton_PlayMode()
+		{
+			
+		}
 	}
 }

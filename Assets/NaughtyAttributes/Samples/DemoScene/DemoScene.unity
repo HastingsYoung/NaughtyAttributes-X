@@ -1820,6 +1820,7 @@ MonoBehaviour:
   enum2: 0
   showIfAll: 
   showIfAny: 
+  showIfEnumAny: 
   showIfEnum: 
   showIfEnumFlag: 
   showIfEnumFlagMulti: 
@@ -1861,6 +1862,7 @@ MonoBehaviour:
   enum2: 0
   hideIfAll: 
   hideIfAny: 
+  hideIfEnumAny: 
   hideIfEnum: 
   hideIfEnumFlag: 
   hideIfEnumFlagMulti: 
@@ -1933,6 +1935,8 @@ MonoBehaviour:
     warning: 0
     nest2:
       error: 0
+  something: 0
+  somethingElse: 
 --- !u!1 &1591883662
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace NaughtyAttributes
 {
@@ -17,8 +18,8 @@ namespace NaughtyAttributes
 			Inverted = false;
 		}
 
-		public ShowIfAttribute(string enumName, object enumValue)
-			: base(enumName, enumValue as Enum)
+		public ShowIfAttribute(string enumName, params object[] enumValue)
+			: base(enumName, enumValue.Select(e => e as Enum).ToArray())
 		{
 			Inverted = false;
 		}
